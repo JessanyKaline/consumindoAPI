@@ -1,0 +1,43 @@
+<html>
+  <head></head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Formulário de CEP</legend>
+        <label>CEP:</label>
+        <input
+          type="text"
+          size="12"
+          id="txtCep"
+          name="txtCep"
+          onblur="fnBuscaCep(this.value)"
+        />
+        <hr />
+        <label>Endere&ccedil;o:</label>
+        <input type="text" size="50" id="txtEndereco" name="txtEndereco" />
+        <hr />
+        <label>Nº:</label>
+        <input type="text" size="6" id="txtNumero" name="txtNumero" />
+        <hr />
+        <label>Complemento:</label>
+        <input
+          type="text"
+          size="20"
+          id="txtComplemento"
+          name="txtComplemento"
+        />
+        <hr />
+        <label>Bairro:</label>
+        <input type="text" size="20" id="txtBairro" name="txtBairro" />
+        <hr />
+        <label>Cidade:</label>
+        <input type="text" size="50" id="txtCidade" name="txtCidade" />
+        <hr />
+        <label>UF:</label>
+        <input type="text" size="4" id="txtUF" name="txtUF" />
+        <hr />
+      </fieldset>
+    </form>
+    <script src="api_cep.js"></script>
+  </body>
+</html>
